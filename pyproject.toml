@@ -1,0 +1,7 @@
+[project]
+name = "mcp-skill-learning"
+version = "0.1.0"
+description = "A step-by-step learning project for Agent, Tool Calling, Skill, and MCP."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
