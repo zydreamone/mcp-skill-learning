@@ -29,7 +29,7 @@
 
 ## 当前状态
 
-阶段 0：已建立目录、学习文档和基础 Python 配置，尚未开始实验。阶段 1–8 待学习；当前无运行时依赖，无 Agent、Skill 业务逻辑或 MCP 实现，也未引入 LangChain、LangGraph 等大型框架。
+当前进度：`00-foundation` 已完成项目结构与基础配置；`01-agent` 已完成实验 01–07，详见 [阶段总览](01-agent/README.md)；`02-tool-calling` 是下一阶段。后续阶段仍待学习，未引入 LangChain、LangGraph 等大型框架。
 
 ## 推荐环境
 

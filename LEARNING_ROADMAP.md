@@ -1,6 +1,6 @@
 # 学习路线
 
-当前只完成项目初始化；以下实验与产物均为后续计划。按阶段推进，每次先学习概念，再做小实验，记录结果并复盘；依赖只在实验需要时引入。
+阶段 0 已建立项目基础；阶段 1 Agent 已完成；阶段 2 Tool Calling 是下一阶段。阶段 2–8 的实验与产物仍为后续计划。按阶段推进，每次先学习概念，再做小实验，记录结果并复盘；依赖只在实验需要时引入。
 
 ## 阶段 0：Foundation
 
@@ -8,13 +8,14 @@
 - **实验目标**：检查 Python 版本和解释器路径；使用 Git 查看分支、工作区和远程地址；用 Python 标准库读写一份 JSON，并通过命令行传入参数。
 - **最终产物**：可复现的本地环境说明、最小 JSON / CLI 实验、基础学习笔记。
 
-## 阶段 1：Agent
+## 阶段 1：Agent（01-agent，✅ Completed）
 
 - **学习目标**：理解 Agent 是围绕目标选择行动并利用反馈推进任务的系统；比较普通 LLM 单次生成与 Agent 的任务执行过程；认识 Agent Loop、State、Context、Action、Observation。
 - **实验目标**：先画出“输入 → 决策 → 行动 → 观察 → 更新状态”的流程，再用最小 Python 示例记录每轮状态；设置完成条件和循环次数上限，观察上下文如何影响下一步行动。
 - **最终产物**：Agent Loop 流程说明、最小循环示例、状态与上下文观察笔记；不引入大型 Agent 框架。
+- **完成记录**：实验 01–07 已覆盖 Agent Loop、Multi Action、History、Context、Fake LLM、Real LLM with Ollama、Failure Recovery；阶段总结见 [01-agent/README.md](01-agent/README.md)。
 
-## 阶段 2：Tool Calling
+## 阶段 2：Tool Calling（02-tool-calling，⏭ Next）
 
 - **学习目标**：理解 Tool、Tool Schema、参数及返回值；理解模型提出调用请求、应用执行工具并回传结果的分工；学习 Agent 如何选择 Tool 以及如何处理多个 Tool 调用。
 - **实验目标**：逐个实现 `list_files`、`read_file`、`search_text`；声明工具 Schema 并校验参数；观察成功、无结果和错误返回；最后串联多工具完成一次小任务。
